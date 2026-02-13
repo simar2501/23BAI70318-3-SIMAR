@@ -1,0 +1,154 @@
+body{
+  margin:0;
+  font-family:Poppins, sans-serif;
+  background:#020617;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(12px);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#38bdf8;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  margin-left:30px;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#38bdf8;
+}
+
+/* HERO SECTION */
+.hero{
+  text-align:center;
+  margin-top:140px;
+  position:relative;
+  z-index:5;
+}
+
+/* MAIN HEADING */
+.hero h1{
+  font-size:65px;
+  background:linear-gradient(90deg,#38bdf8,#a78bfa);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+/* TYPING TEXT FIX */
+.hero h2{
+  color:white;
+  margin-top:20px;
+  font-weight:500;
+}
+
+/* SUBTEXT */
+.hero p{
+  font-size:20px;
+  opacity:0.85;
+  margin-top:15px;
+}
+
+/* PROJECT CARDS */
+.project-container{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+  margin-top:80px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(20px);
+  padding:30px;
+  width:280px;
+  border-radius:20px;
+  box-shadow:0 10px 40px rgba(0,0,0,0.7);
+  transition:0.4s;
+}
+
+.card:hover{
+  transform:translateY(-15px) scale(1.05);
+  box-shadow:0 20px 60px rgba(56,189,248,0.35);
+}
+
+/* CONTACT PAGE FIX */
+.contact{
+  text-align:center;
+  margin-top:100px;
+  position:relative;
+  z-index:5;
+}
+
+.contact h1{
+  color:white;
+  margin-bottom:20px;
+}
+
+.contact input,
+.contact textarea{
+  width:320px;
+  padding:12px;
+  margin:10px;
+  border-radius:10px;
+  background:#0f172a;
+  color:white;
+  border:1px solid #38bdf8;
+  outline:none;
+  font-size:15px;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder{
+  color:#94a3b8;
+}
+
+.contact button{
+  padding:12px 25px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(90deg,#38bdf8,#a78bfa);
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+  margin-top:10px;
+}
+
+.contact button:hover{
+  transform:scale(1.07);
+  box-shadow:0 10px 30px rgba(56,189,248,0.5);
+}
+
+/* LIVE CLOCK */
+.clock{
+  position:absolute;
+  right:40px;
+  top:90px;
+  font-size:18px;
+  opacity:0.85;
+}
+
+/* SCROLL */
+html{
+  scroll-behavior:smooth;
+}
